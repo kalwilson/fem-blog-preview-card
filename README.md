@@ -36,7 +36,7 @@ Mobile view:
 ### Links
 
 - Solution repo: [You're already here!](https://github.com/kalwilson/fem-blog-preview-card)
-- Live Site: [Click Here](https://kalwilson.github.io/fem-blog-preview-card)
+- Live Site: [Click Here](https://kalwilson.github.io/fem-blog-preview-card/)
 
 ## My process
 
