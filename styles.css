@@ -257,7 +257,7 @@ section {
   --radius-md: 1.25rem; /*  20px*/
 
   /* == SHADOW */
-  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 100%);
+  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 1);
 
   /* == TRANSITION */
   --transition-base: 250ms ease-in-out;
