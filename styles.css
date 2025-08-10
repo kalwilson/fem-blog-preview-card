@@ -171,6 +171,8 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
+  padding: 0;
+  margin: 0;
 }
 
 /* === BLOCKS */
@@ -235,22 +237,24 @@ section {
   --font-weight-medium: 500;
   --font-weight-bold: 800;
 
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.5rem;
+  --font-size-xs: 0.75rem; /*12px*/
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /*     16px */
+  --font-size-lg: 1.25rem; /*  20px */
 
   --line-height: 150%;
   --letter-spacing: 0;
 
   /* == SPACING */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 0.75rem;
-  --space-lg: 1.5rem;
+  --space-xs: 0.25rem; /*  4px*/
+  --space-sm: 0.5rem; /*   8px*/
+  --space-md: 0.75rem; /* 12px*/
+  --space-lg: 1.5rem; /*  24px*/
 
   /* == RADIUS */
-  --radius-sm: 0.625rem;
-  --radius-md: 1.25rem;
+  --radius-xs: 0.25rem; /*   4px*/
+  --radius-sm: 0.625rem; /* 10px*/
+  --radius-md: 1.25rem; /*  20px*/
 
   /* == SHADOW */
   --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 100%);
@@ -271,11 +275,12 @@ body {
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
+  color: var(--color-main-950);
 }
 
 /* === CARD */
 .card {
-  max-width: 20.4375rem;
+  max-width: 327px;
   display: flex;
   flex-flow: column nowrap;
   gap: var(--space-lg);
@@ -293,4 +298,54 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--radius-sm);
+}
+
+.card__section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card__section--info {
+  flex-flow: column nowrap;
+  gap: var(--space-sm);
+}
+
+.card__tag {
+  width: fit-content;
+  background-color: var(--color-accent-300);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.card__date {
+  font-size: var(--font-size-xs);
+}
+
+.card__heading {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.card__text {
+  font-size: var(--font-size-sm);
+  color: var(--color-main-500);
+}
+
+.card__section--author {
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.card__avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card__author {
+  font-size: var(--font-size-sm);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
 }
