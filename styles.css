@@ -238,6 +238,7 @@ section {
 
   --font-size-xs: clamp(0.75rem, 0.217vw + 0.707rem, 0.875rem);
   --font-size-sm: clamp(0.875rem, 0.219vw + 0.831rem, 1rem);
+  --font-size-base: 0.875rem;
   --font-size-md: 1rem;
   --font-size-lg: clamp(1.25rem, 0.435vw + 1.163rem, 1.5rem);
 
@@ -266,6 +267,7 @@ section {
 body {
   height: 100vh;
   height: 100dvh;
+  background-color: var(--color-accent-300);
   padding: 0;
   margin: 0;
   display: flex;
@@ -286,6 +288,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: var(--space-lg);
+  background-color: var(--color-main-100);
   padding: var(--space-lg);
   border-radius: var(--radius-md);
   border: 1px inset var(--color-main-950);
@@ -348,7 +351,7 @@ body {
 }
 
 .card__author {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-style: normal;
   font-weight: var(--font-weight-bold);
 }
