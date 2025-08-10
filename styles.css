@@ -276,6 +276,9 @@ body {
 /* === CARD */
 .card {
   max-width: 20.4375rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-lg);
   padding: var(--space-lg);
   border-radius: var(--radius-md);
   border: 1px inset var(--color-main-950);
