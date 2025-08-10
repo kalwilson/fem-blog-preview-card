@@ -1,0 +1,293 @@
+/* === NORMALIZE */
+html {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-color: currentcolor;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  appearance: auto;
+  -webkit-appearance: button;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  appearance: auto;
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  appearance: auto;
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+/* === BASE CSS */
+/* === MEDIA */
+img,
+svg,
+video,
+canvas,
+iframe,
+object,
+embed {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === LISTS */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === LINKS */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* === FORM */
+button,
+input,
+select,
+textarea {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+input:disabled,
+button:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* === TYPOGRAPHY */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* === BLOCKS */
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* === FONTS */
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./assets/fonts/figtree/Figtree-Light.woff2') format('woff2'),
+    url('./assets/fonts/figtree/Figtree-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./assets/fonts/figtree/Figtree-Medium.woff2') format('woff2'),
+    url('./assets/fonts/figtree/Figtree-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 800;
+  font-style: normal;
+  src: url('./assets/fonts/figtree/Figtree-ExtraBold.woff2') format('woff2'),
+    url('./assets/fonts/figtree/Figtree-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 300;
+  font-style: italic;
+  src: url('./assets/fonts/figtree/Figtree-LightItalic.woff2') format('woff2'),
+    url('./assets/fonts/figtree/Figtree-LightItalic.woff') format('woff');
+  font-display: swap;
+}
+
+/* === VARIABLES */
+:root {
+  /* == COLORS */
+  --color-main-100: hsl(0, 0%, 100%);
+  --color-main-500: hsl(0, 0%, 42%);
+  --color-main-950: hsl(0, 0%, 7%);
+
+  --color-accent-300: hsl(47, 88%, 63%);
+
+  /* == TYPOGRAPHY */
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
+
+  --line-height: 150%;
+  --letter-spacing: 0;
+
+  /* == SPACING */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1.5rem;
+
+  /* == RADIUS */
+  --radius-sm: 0.625rem;
+  --radius-md: 1.25rem;
+
+  /* == SHADOW */
+  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 100%);
+}
+
+/* === BODY */
+body {
+  height: 100vh;
+  height: 100dvh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Figtree', Arial, Helvetica, sans-serif;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+/* === CARD */
+.card {
+  max-width: 20.4375rem;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px inset var(--color-main-950);
+  box-shadow: var(--shadow-card);
+}
+
+.card__img {
+  height: 200px;
+  width: 100%;
+  background: url('./assets/images/illustration-article.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--radius-sm);
+}
